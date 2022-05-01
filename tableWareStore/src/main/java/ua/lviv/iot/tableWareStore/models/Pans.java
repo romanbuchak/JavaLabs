@@ -12,6 +12,12 @@ public class Pans extends Dishes {
         this.volume = volume;
         this.WithPatternOrNot = WithPatternOrNot;
     }
+    public String getHeaders() {
+        return super.getHeaders();
+    }
+    public String toCSV(){
+        return String.format("%s, %s, %s" , getType(), getColor(), getNumberInBox()) ;
+    }
 
     @Override
     public String toString() {

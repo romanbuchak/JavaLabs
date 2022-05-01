@@ -61,6 +61,5 @@ public class Manager {
                 .filter(pan -> pan.getNumberInBox() >= 12)
                 .sorted(Comparator.comparing(Pans::getVolume))
                 .collect(Collectors.toList());
-
     }
 }
