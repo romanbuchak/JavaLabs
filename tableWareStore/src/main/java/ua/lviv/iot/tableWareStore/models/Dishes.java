@@ -12,7 +12,13 @@ public abstract class Dishes {
         this.type = type;
         this.color = color;
         this.numberInBox = numberInBox;
+    }
 
+    public String getHeaders() {
+        return "Type, Color, NumberInBox";
+    }
+    public String toCSV(){
+        return String.format("%s, %s, %s" , getType(), getColor(), getNumberInBox());
     }
 
     @Override

@@ -12,6 +12,12 @@ public class Plates extends Dishes {
         this.price = price; // in UAH
         this.size = size;
     }
+    public String getHeaders() {
+        return super.getHeaders();
+    }
+    public String toCSV(){
+        return String.format("%s, %s, %s" , getType(), getColor(), getNumberInBox());
+    }
 
     @Override
     public String toString() {
