@@ -1,5 +1,6 @@
 package ua.lviv.iot.tableWareStore.manager;
 
+import ua.lviv.iot.tableWareStore.models.Dishes;
 import ua.lviv.iot.tableWareStore.models.Pans;
 import ua.lviv.iot.tableWareStore.models.Plates;
 import java.io.File;
